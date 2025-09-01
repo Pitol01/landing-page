@@ -1,12 +1,12 @@
 import { useState } from "react";
 import "./header.css"
 
-export const Header = () => {
+export const Header = () =>  {
   const [open, setOpen] = useState(false);
   return <header><nav className="navbar">
       <div className="navbar-container">
       
-        <h1 className="navbar-logo">MiApp</h1>
+        <h1 className="navbar-logo">MiApPPP</h1>
 
     
         <ul className={`navbar-links ${open ? "active" : ""}`}>
