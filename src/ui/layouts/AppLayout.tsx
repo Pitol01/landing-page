@@ -6,10 +6,10 @@ export const AppLayout = () => {
   return (
     <>
       <Header />
-      <main>
+      <main style={{ marginTop: 120 }}>
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
