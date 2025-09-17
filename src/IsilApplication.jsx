@@ -5,7 +5,7 @@ import { CalculadoraPage } from "./features/calculadora/CalculadoraPage";
 export const IsilApplication = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/landing-page">
         <Routes>
           <Route path="/" element={<AppLayout />} />
           <Route path="/calculadora" element={<CalculadoraPage />} />
