@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./header.css";
-import { Link } from "react-router";
-import { IsilIconSvg } from "../../../assets/isil-icon/IsilIconSvg";
+import { Link, NavLink } from "react-router";
 
 const navLinks = [
   {
@@ -37,16 +36,16 @@ export const Header = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-logo">
-            <IsilIconSvg />
+            <img src="icon/logo-isil.jpg" alt="ISIL" />
           </div>
 
-          <ul className={`navbar-links ${open ? "active" : ""}`}>
+          <nav className={`navbar-links ${open ? "active" : ""}`}>
             {navLinks.map(({ label, to }, i) => (
-              <Link key={i} to={to}>
+              <NavLink key={i} to={to} className={({ isActive }) => (isActive ? "active-link" : "")}>
                 {label}
-              </Link>
+              </NavLink>
             ))}
-          </ul>
+          </nav>
 
           <button className="navbar-toggle" onClick={() => setOpen(!open)}>
             {open ? "✖" : "☰"}
