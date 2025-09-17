@@ -1,5 +1,3 @@
-import { Eventos } from "../Eventos/Eventos";
-
 export const HomePage = () => {
-  return <div>HomePage<Eventos/></div>;
+  return <div>home page</div>;
 };

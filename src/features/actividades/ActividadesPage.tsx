@@ -49,7 +49,7 @@ export const ActividadesPage = () => {
       <h1>Actividades/</h1>
       <div className="activities-list">
         {actividadesIcons.map(({ descripcion, linkIcon, linkRef }, i) => (
-          <div className="activities-item">
+          <div key={i} className="activities-item">
             <img src={`img/${linkIcon}`} alt={descripcion} />
             <h4>{descripcion}</h4>
             <button>Ver más</button>
