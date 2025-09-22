@@ -12,7 +12,7 @@ export const AppLayout = () => {
     <>
       <Header />
       <main>
-        <SectionWrapper id="about">
+        <SectionWrapper id="home">
           <HomePage />
         </SectionWrapper>
         <SectionWrapper id="activities">
